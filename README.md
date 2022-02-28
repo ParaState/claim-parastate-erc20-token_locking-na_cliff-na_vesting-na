@@ -4,7 +4,6 @@
 
 Interacts with the type of timelock smart contract, which allows users to unlock tokens.
 
-![linear-timelock](https://user-images.githubusercontent.com/9831342/150708583-bd727000-3b9f-4f02-af2e-958774f0d8a3.jpg)
 
 # How do end users interact with the timelock UI
 
