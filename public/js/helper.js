@@ -656,7 +656,7 @@ async function onButtonClickTransfer() {
             response = await linearTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, stateAmountInWei);
             var toastResponse = JSON.stringify({
                 avatar: "../images/favicon.ico",
-                text: "Congratulations, tokens unlocked!",
+                text: "Congratulations, tokens unlocked",
                 duration: 10000,
                 newWindow: true,
                 close: true,
@@ -707,4 +707,5 @@ async function onButtonClickTransfer() {
         document.getElementById("button_transfer_tokens").disabled = false;
         document.getElementById("pb").style.width = '0%';
     });
+
 }
