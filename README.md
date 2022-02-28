@@ -2,7 +2,7 @@
 
 # What does it do?
 
-Interacts with the linear timelock smart contract, which allows users to linearly unlock tokens.
+Interacts with the type of timelock smart contract, which allows users to unlock tokens.
 
 ![linear-timelock](https://user-images.githubusercontent.com/9831342/150708583-bd727000-3b9f-4f02-af2e-958774f0d8a3.jpg)
 
@@ -18,9 +18,9 @@ It is recommended to also click the "Refresh/Calculate Balances" button after an
 
 ![Screen Shot 2022-01-10 at 7 20 09 am](https://user-images.githubusercontent.com/9831342/148701427-3217e79a-3e02-4b71-b4b1-20d93729ac94.png)
 
-# Where is the linear timelock smart contract
+# Where is the timelock smart contract
 
-The [timelock smart contract](https://github.com/second-state/linear-timelock-smart-contract/) is deployed on the Ethereum mainnet and then this UI source code us updated with the timelocks ABI, bytecode, contract address and deployment transaction hash. This timelock UI instantiates the timelock contract in order to interact and transfer tokens to end users and so forth.
+There are a few different [timelock smart contracts i.e.](https://github.com/second-state/linear-timelock-smart-contract/) which are deployed on the Ethereum mainnet. 
 
 # How to deploy this UI
 
@@ -54,4 +54,39 @@ To publish/deploy simply type
 npm run deploy
 ```
 
-The site will then be hosted to [https://second-state.github.io/linear-timelock-user-interface/html/](https://second-state.github.io/linear-timelock-token-user-interface/html/)
+## Convention for URL
+
+The path prefix is 
+
+```
+claim-parastate-erc20-token
+```
+
+The 3 parameters are `locking`, `cliff` and `vesting`. For example.
+
+```
+_locking-na_cliff-na_vesting-na`
+```
+
+When combined will produce URL paths like the following examples
+
+no locking, no cliff and no vesting
+
+```
+claim-parastate-erc20-token_locking-na_cliff-na_vesting-na
+```
+
+30 Day lock, no cliff and no vesting
+
+```
+claim-parastate-erc20-token_locking-30-day_cliff-na_vesting-na
+```
+
+no locking, 90 day cliff and 15 months vesting
+
+```
+claim-parastate-erc20-token_locking-na_cliff-90-day_vesting-15-month
+```
+
+
+This particular site will be hosted to [https://second-state.github.io/claim-parastate-erc20-token_locking-na_cliff-na_vesting-na/html/index.html](https://second-state.github.io/claim-parastate-erc20-token_locking-na_cliff-na_vesting-na/html/index.html)

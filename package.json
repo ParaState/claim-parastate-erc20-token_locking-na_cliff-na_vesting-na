@@ -1,7 +1,7 @@
 {
-  "name": "linear-timelock-user-interface",
+  "name": "claim-parastate-erc20-token_locking-na_cliff-na_vesting-na",
   "version": "1.0.4",
-  "description": "A user interface for the https://github.com/second-state/linear-timelock-smart-contract/",
+  "description": "A user interface for users to claim tokens",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/second-state/linear-timelock-user-interface.git"
+    "url": "git+https://github.com/second-state/claim-parastate-erc20-token_locking-na_cliff-na_vesting-na.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/second-state/linear-timelock-user-interface/issues"
+    "url": "https://github.com/second-state/claim-parastate-erc20-token_locking-na_cliff-na_vesting-na/issues"
   },
-  "homepage": "https://second-state.github.io/linear-timelock-user-interface/html",
+  "homepage": "https://second-state.github.io/claim-parastate-erc20-token_locking-na_cliff-na_vesting-na/html",
   "dependencies": {
     "ethers": "^5.5.3",
     "express": "^4.17.2",
